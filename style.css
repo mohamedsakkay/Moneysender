@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    /* outline: 1px red solid;  */
+
+}
+body{
+    /* background-color: rgba(211, 164, 164, 0.644); */
+    background-image: url("/images/P144.png"); 
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+img{
+    width: 100px;
+    margin-left: 60px;
+}
+ul{
+    list-style:none;
+    display: flex;
+    margin-right: 90px;
+    gap: 60px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold ;
+    text-transform:capitalize;
+    /* border: 1px solid transparent; */
+    padding: 10px 30px;
+}
+a:hover{
+    /* background-color: rgb(175, 24, 24); */
+    color: rgb(175, 24, 24);
+}
+/* ------------------------------nav-bar the end----------------------------- */
+.head{
+    display: flex;
+    background-color: rgba(139, 135, 135, 0.11);
+    /* background-image: linear-gradient(rgb(175, 175, 175, 0.4), rgb(175, 175, 175, 0.4)), url("/images/Background.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.photo img{
+    margin-top: 40%;
+    margin-left: 20%;
+    width: 490px;
+    height: 50vh;
+    border-radius: 20px;
+    transform: translateY(0%);
+    border: 1px solid transparent;
+    box-shadow: 5px 10px 10px 5px rgb(139, 135, 135);
+}  
+.photo img:hover{
+    transform: translateY(-10%);   
+}
+.content{
+    width: 35%;
+    margin-left: 10%;
+    position: relative;
+    top: 79%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.content h1{
+    font-size: 55px;
+    color: rgb(175, 24, 24); 
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.content p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px auto;
+}
+.content button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 45%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.content button:hover{
+    color: black;
+    background-color: rgb(175, 24, 24);
+}
+/* ------------------------------------------hero the end---------------------------------- */
+/* ---------------------------------------------services------------------------------------ */
+#services{
+    margin-top: 6%;
+    height: 94vh;
+}
+h2{
+    color: rgb(175, 24, 24); 
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+h3{
+    text-align: center;
+}
+.one_service img {
+    width: 360px;
+    height: 50vh;
+    border-radius: 10%;
+}
+.one_service h3{
+    color: white;
+    background-color:  rgb(175, 24, 24);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10%;
+    font-size: 25px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.one_service :hover {
+    color: white;
+    background-color: black;
+}
+/* -------------------------------Contact------------------ */
+#contact{
+    height: 94vh;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 159, 159, 0.9);
+    padding: 30px;
+    width: 35%;
+    height: 70vh;
+    border-radius: 10%;
+    gap: 14px;
+}
+form:hover{
+    background-color: white;
+}
+form input, button{
+    padding: 15px;
+    border-radius: 10px;
+}
+textarea{
+    height: 50vh;
+    border-radius: 10px;
+}
+.input-field{
+    background-color: rgb(175, 174, 174, 0.4); 
+}
+.input-field:hover{
+    background-color: white;
+}
+button{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 15px;
+    font-size: 17px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 14px 13px;
+
+}
+button:hover {
+    color:white;
+    background-color:  rgb(175, 24, 24);
+    border: 1px solid transparent;
+}
+.image img{
+    width: 400px;
+    height: 70vh;
+    border-radius: 10%;
+    transform: translateY(0%);
+}
+.image img:hover{
+    transform: translateY(-5%);
+    box-shadow: 5px 5px 10px 10px rgb(143, 140, 140);
+}
+/* -----------------------------footer--------------------------------- */
+.footer{
+    width:100%;
+    margin-top: 7%;
+    text-align: center;
+    padding: 40px 0;
+    background: black;
+}
+.footer h4{
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+.icons .uil{
+    margin-top: 4%;
+    /* color:#f44336; */
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 13px;
+    padding: 18px 0;
+}
+.uil-facebook{
+    color: rgb(47, 47, 255, 0.8);
+}
+.uil-twitter{
+    color: blue;
+}
+.uil-instagram-alt{
+    color: palevioletred;
+}
+.uil-linkedin{
+    color: rgb(0, 0, 150);
+}
+.footer .cr{
+    margin-top: 5%;
+    color: white;
+}
